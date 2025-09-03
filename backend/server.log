@@ -1,0 +1,417 @@
+Watching for file changes with StatReloader
+[26/Aug/2025 15:21:07] "POST /api/user/login/ HTTP/1.1" 200 691
+[26/Aug/2025 15:21:14] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 197
+/Users/mac/Desktop/innovsurf/backend/AppWeb/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 26, 2025 - 15:21:02
+Django version 4.1.13, using settings 'innovsurf.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[26/Aug/2025 15:21:45] "GET /api/surf-club/profile/ HTTP/1.1" 200 392
+[26/Aug/2025 15:21:45] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[26/Aug/2025 15:21:47] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 197
+[26/Aug/2025 15:21:50] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[26/Aug/2025 15:21:56] "GET /api/surf-club/statistics/ HTTP/1.1" 200 168
+[26/Aug/2025 15:22:03] "OPTIONS /api/surf-club/equipments/ HTTP/1.1" 200 0
+[26/Aug/2025 15:22:03] "GET /api/surf-club/equipments/ HTTP/1.1" 200 650
+[26/Aug/2025 15:22:07] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[26/Aug/2025 15:22:08] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 14409
+[26/Aug/2025 15:23:27] "GET /api/surf-club/profile/ HTTP/1.1" 200 392
+[26/Aug/2025 15:23:27] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[26/Aug/2025 15:23:29] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 197
+[26/Aug/2025 15:23:33] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[26/Aug/2025 15:23:34] "GET /api/surf-club/equipments/ HTTP/1.1" 200 650
+[26/Aug/2025 15:23:35] "GET /api/surf-club/monitors/ HTTP/1.1" 200 241
+[26/Aug/2025 15:23:37] "GET /api/surf-club/statistics/ HTTP/1.1" 200 168
+[26/Aug/2025 15:23:38] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[26/Aug/2025 15:23:40] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 14409
+[26/Aug/2025 15:23:55] "GET /api/surf-club/profile/ HTTP/1.1" 200 392
+[26/Aug/2025 15:23:55] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[26/Aug/2025 21:20:35] "OPTIONS /api/user/login/ HTTP/1.1" 200 0
+[26/Aug/2025 21:20:35] "POST /api/user/login/ HTTP/1.1" 200 717
+[26/Aug/2025 21:20:38] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:20:41] "OPTIONS /api/surf-spots/1/ HTTP/1.1" 200 0
+[26/Aug/2025 21:20:41] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[26/Aug/2025 21:20:42] "OPTIONS /api/surf-spots/ HTTP/1.1" 200 0
+[26/Aug/2025 21:20:42] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:20:44] "OPTIONS /api/surf-spots/prevision/1/ HTTP/1.1" 200 0
+[26/Aug/2025 21:20:45] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:21:04] "POST /api/user/login/ HTTP/1.1" 200 717
+[26/Aug/2025 21:21:06] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:21:07] "OPTIONS /api/surf-spots/prevision/2/ HTTP/1.1" 200 0
+[26/Aug/2025 21:21:08] "GET /api/surf-spots/prevision/2/ HTTP/1.1" 200 421
+[26/Aug/2025 21:22:32] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:22:34] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:22:36] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:22:38] "GET /api/surf-spots/prevision/2/ HTTP/1.1" 200 421
+[26/Aug/2025 21:24:07] "GET /api/surf-spots/prevision/2/ HTTP/1.1" 200 421
+[26/Aug/2025 21:24:29] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:24:34] "GET /api/surf-spots/prevision/2/ HTTP/1.1" 200 421
+[26/Aug/2025 21:24:36] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:24:44] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:24:45] "OPTIONS /api/forums/2/ HTTP/1.1" 200 0
+Not Found: /api/forums/2/
+[26/Aug/2025 21:24:45] "GET /api/forums/2/ HTTP/1.1" 404 28
+[26/Aug/2025 21:24:48] "OPTIONS /api/forums/2/messages/ HTTP/1.1" 200 0
+Not Found: /api/forums/2/messages/
+[26/Aug/2025 21:24:48] "GET /api/forums/2/messages/ HTTP/1.1" 404 28
+[26/Aug/2025 21:24:50] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:24:58] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:24:59] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:25:05] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:27:54] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:27:56] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:28:21] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:28:34] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:29:02] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:29:38] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:29:41] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:31:15] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:31:27] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:32:05] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:32:42] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:32:43] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+[26/Aug/2025 21:47:50] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:47:52] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 428
+/Users/mac/Desktop/innovsurf/backend/AppWeb/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 26, 2025 - 15:21:33
+Django version 4.1.13, using settings 'innovsurf.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/mac/Desktop/innovsurf/backend/AppWeb/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 26, 2025 - 21:51:41
+Django version 4.1.13, using settings 'innovsurf.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/mac/Desktop/innovsurf/backend/AppWeb/services.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 26, 2025 - 21:52:45
+Django version 4.1.13, using settings 'innovsurf.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/mac/Desktop/innovsurf/backend/AppWeb/services.py changed, reloading.
+Performing system checks...
+
+✅ Configuration chargée - Clé API: f2a0d83a-82c6-11f0-a...
+System check identified no issues (0 silenced).
+August 26, 2025 - 21:57:28
+Django version 4.1.13, using settings 'innovsurf.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[26/Aug/2025 21:58:43] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 21:58:48] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9030
+[26/Aug/2025 21:59:52] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 22:00:12] "POST /api/user/login/ HTTP/1.1" 200 691
+[26/Aug/2025 22:00:15] "OPTIONS /api/ai/demand-forecast/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:15] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 197
+[26/Aug/2025 22:00:20] "OPTIONS /api/surf-club/statistics/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:20] "GET /api/surf-club/statistics/ HTTP/1.1" 200 168
+[26/Aug/2025 22:00:27] "OPTIONS /api/surf-club/monitors/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:27] "GET /api/surf-club/monitors/ HTTP/1.1" 200 241
+[26/Aug/2025 22:00:35] "OPTIONS /api/surf-club/equipments/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:35] "GET /api/surf-club/equipments/ HTTP/1.1" 200 650
+[26/Aug/2025 22:00:42] "OPTIONS /api/surf-club/surf-sessions/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:42] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[26/Aug/2025 22:00:43] "OPTIONS /api/surf-club/lesson-schedules/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:43] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 14409
+[26/Aug/2025 22:00:49] "OPTIONS /api/surf-club/surf-lessons/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:49] "GET /api/surf-club/surf-lessons/ HTTP/1.1" 200 18
+[26/Aug/2025 22:00:50] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 14409
+[26/Aug/2025 22:00:51] "OPTIONS /api/surf-club/orders/ HTTP/1.1" 200 0
+[26/Aug/2025 22:00:51] "GET /api/surf-club/orders/ HTTP/1.1" 200 13
+[26/Aug/2025 22:01:15] "POST /api/user/login/ HTTP/1.1" 200 717
+[26/Aug/2025 22:01:17] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 22:01:22] "OPTIONS /api/forums/1/ HTTP/1.1" 200 0
+Not Found: /api/forums/1/
+[26/Aug/2025 22:01:22] "GET /api/forums/1/ HTTP/1.1" 404 28
+[26/Aug/2025 22:01:25] "OPTIONS /api/forums/1/messages/ HTTP/1.1" 200 0
+Not Found: /api/forums/1/messages/
+[26/Aug/2025 22:01:25] "GET /api/forums/1/messages/ HTTP/1.1" 404 28
+Not Found: /api/forums/1/messages/
+[26/Aug/2025 22:01:28] "GET /api/forums/1/messages/ HTTP/1.1" 404 28
+Not Found: /api/forums/1/messages/
+[26/Aug/2025 22:01:31] "GET /api/forums/1/messages/ HTTP/1.1" 404 28
+Not Found: /api/forums/1/messages/
+[26/Aug/2025 22:01:34] "GET /api/forums/1/messages/ HTTP/1.1" 404 28
+Not Found: /api/forums/1/messages/
+[26/Aug/2025 22:01:37] "GET /api/forums/1/messages/ HTTP/1.1" 404 28
+[26/Aug/2025 22:01:40] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 22:01:47] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 22:01:47] "OPTIONS /api/surfer/profile/ HTTP/1.1" 200 0
+[26/Aug/2025 22:01:47] "GET /api/surfer/profile/ HTTP/1.1" 200 474
+[26/Aug/2025 22:01:55] "GET /api/surf-spots/prevision/2/ HTTP/1.1" 200 509
+[26/Aug/2025 22:02:02] "POST /api/user/login/ HTTP/1.1" 200 691
+[26/Aug/2025 22:02:04] "OPTIONS /api/surf-club/profile/ HTTP/1.1" 200 0
+[26/Aug/2025 22:02:04] "GET /api/surf-club/profile/ HTTP/1.1" 200 392
+[26/Aug/2025 22:02:04] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[26/Aug/2025 23:32:58] "POST /api/user/login/ HTTP/1.1" 200 717
+[26/Aug/2025 23:33:02] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 23:33:03] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[26/Aug/2025 23:33:15] "OPTIONS /api/surf-clubs/2/lessons/ HTTP/1.1" 200 0
+[26/Aug/2025 23:33:15] "GET /api/surf-clubs/2/lessons/ HTTP/1.1" 200 462
+[26/Aug/2025 23:33:22] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 23:33:30] "GET /api/surfer/profile/ HTTP/1.1" 200 474
+[26/Aug/2025 23:33:35] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 23:33:36] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[26/Aug/2025 23:33:38] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9030
+[26/Aug/2025 23:44:58] "POST /api/user/login/ HTTP/1.1" 200 691
+[26/Aug/2025 23:45:00] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 197
+[27/Aug/2025 00:15:17] "GET /api/surf-club/orders/ HTTP/1.1" 200 13
+[27/Aug/2025 00:15:19] "GET /api/surf-club/surf-lessons/ HTTP/1.1" 200 18
+[27/Aug/2025 00:15:26] "GET /api/surf-club/profile/ HTTP/1.1" 200 392
+[27/Aug/2025 00:15:26] "GET /api/surf-spots/1/ HTTP/1.1" 200 348
+[27/Aug/2025 00:15:53] "GET /api/surf-spots/ HTTP/1.1" 200 664
+Not Found: /
+[27/Aug/2025 00:16:26] "GET / HTTP/1.1" 404 2292
+Not Found: /api/
+[27/Aug/2025 00:20:36] "GET /api/ HTTP/1.1" 404 12575
+Not Found: /api/
+[27/Aug/2025 00:20:41] "GET /api/ HTTP/1.1" 404 12575
+[27/Aug/2025 00:20:41] "GET /api/surf-spots/ HTTP/1.1" 200 664
+Unauthorized: /api/surf-spots/1/
+[27/Aug/2025 00:20:41] "GET /api/surf-spots/1/ HTTP/1.1" 401 58
+[27/Aug/2025 00:20:42] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9052
+Not Found: /api/surf-clubs/
+[27/Aug/2025 00:20:42] "GET /api/surf-clubs/ HTTP/1.1" 404 12608
+Not Found: /api/lessons/
+[27/Aug/2025 00:20:43] "GET /api/lessons/ HTTP/1.1" 404 12599
+Not Found: /api/bookings/
+[27/Aug/2025 00:20:43] "GET /api/bookings/ HTTP/1.1" 404 12602
+Not Found: /api/users/
+[27/Aug/2025 00:20:43] "GET /api/users/ HTTP/1.1" 404 12593
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:20:43] "GET /api/chatbot/ HTTP/1.1" 400 29
+Not Found: /api/analytics/dashboard/
+[27/Aug/2025 00:20:44] "GET /api/analytics/dashboard/ HTTP/1.1" 404 12635
+Not Found: /api/recommendations/
+[27/Aug/2025 00:20:44] "GET /api/recommendations/ HTTP/1.1" 404 12623
+Not Found: /api/lessons/
+[27/Aug/2025 00:20:44] "POST /api/lessons/ HTTP/1.1" 404 12600
+Not Found: /api/bookings/
+[27/Aug/2025 00:20:45] "POST /api/bookings/ HTTP/1.1" 404 12603
+Not Found: /api/
+[27/Aug/2025 00:20:51] "GET /api/ HTTP/1.1" 404 12575
+Bad Request: /api/token/
+[27/Aug/2025 00:20:51] "POST /api/token/ HTTP/1.1" 400 37
+[27/Aug/2025 00:20:51] "GET /api/surf-spots/ HTTP/1.1" 200 664
+[27/Aug/2025 00:20:52] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9052
+[27/Aug/2025 00:20:54] "GET /api/surf-spots/prevision/2/ HTTP/1.1" 200 9037
+Not Found: /api/
+[27/Aug/2025 00:21:00] "GET /api/ HTTP/1.1" 404 12575
+Bad Request: /api/token/
+[27/Aug/2025 00:21:00] "POST /api/token/ HTTP/1.1" 400 37
+[27/Aug/2025 00:21:00] "GET /api/surf-spots/ HTTP/1.1" 200 664
+Unauthorized: /api/surf-spots/1/
+[27/Aug/2025 00:21:01] "GET /api/surf-spots/1/ HTTP/1.1" 401 58
+[27/Aug/2025 00:21:02] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9052
+Not Found: /api/surf-clubs/
+[27/Aug/2025 00:21:02] "GET /api/surf-clubs/ HTTP/1.1" 404 12608
+Not Found: /api/surf-clubs/1/
+[27/Aug/2025 00:21:03] "GET /api/surf-clubs/1/ HTTP/1.1" 404 12614
+Not Found: /api/lessons/
+[27/Aug/2025 00:21:03] "GET /api/lessons/ HTTP/1.1" 404 12599
+Not Found: /api/bookings/
+[27/Aug/2025 00:21:04] "GET /api/bookings/ HTTP/1.1" 404 12602
+Not Found: /api/users/
+[27/Aug/2025 00:21:04] "GET /api/users/ HTTP/1.1" 404 12593
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:21:05] "GET /api/chatbot/ HTTP/1.1" 400 29
+Not Found: /api/analytics/dashboard/
+[27/Aug/2025 00:21:05] "GET /api/analytics/dashboard/ HTTP/1.1" 404 12635
+Not Found: /api/recommendations/
+[27/Aug/2025 00:21:06] "GET /api/recommendations/ HTTP/1.1" 404 12623
+Bad Request: /api/windy/forecast/
+[27/Aug/2025 00:21:06] "GET /api/windy/forecast/ HTTP/1.1" 400 38
+Not Found: /api/lessons/
+[27/Aug/2025 00:21:07] "POST /api/lessons/ HTTP/1.1" 404 12600
+Not Found: /api/bookings/
+[27/Aug/2025 00:21:07] "POST /api/bookings/ HTTP/1.1" 404 12603
+Not Found: /api/
+[27/Aug/2025 00:26:41] "GET /api/ HTTP/1.1" 404 12575
+Bad Request: /api/token/
+[27/Aug/2025 00:26:41] "POST /api/token/ HTTP/1.1" 400 37
+[27/Aug/2025 00:26:41] "GET /api/surf-spots/ HTTP/1.1" 200 664
+Unauthorized: /api/surf-spots/1/
+[27/Aug/2025 00:26:41] "GET /api/surf-spots/1/ HTTP/1.1" 401 58
+[27/Aug/2025 00:26:42] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9052
+Method Not Allowed: /api/contact/
+[27/Aug/2025 00:26:42] "GET /api/contact/ HTTP/1.1" 405 40
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:26:44] "GET /api/chatbot/ HTTP/1.1" 400 29
+[27/Aug/2025 00:26:44] "GET /api/chatbot/faq/ HTTP/1.1" 200 4874
+Forbidden: /api/chatbot/analytics/
+[27/Aug/2025 00:26:44] "GET /api/chatbot/analytics/ HTTP/1.1" 403 32
+Bad Request: /api/windy/forecast/
+[27/Aug/2025 00:26:45] "GET /api/windy/forecast/ HTTP/1.1" 400 38
+Bad Request: /api/windy/optimal-times/
+[27/Aug/2025 00:26:45] "GET /api/windy/optimal-times/ HTTP/1.1" 400 38
+Bad Request: /api/windy/conditions-summary/
+[27/Aug/2025 00:26:45] "GET /api/windy/conditions-summary/ HTTP/1.1" 400 38
+Unauthorized: /api/ai/demand-forecast/
+[27/Aug/2025 00:26:45] "GET /api/ai/demand-forecast/ HTTP/1.1" 401 58
+[27/Aug/2025 00:29:40] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:29:40] "GET /api/surf-club/profile/ HTTP/1.1" 200 378
+Not Found: /api/
+[27/Aug/2025 00:29:42] "GET /api/ HTTP/1.1" 404 12575
+Bad Request: /api/token/
+[27/Aug/2025 00:29:42] "POST /api/token/ HTTP/1.1" 400 37
+[27/Aug/2025 00:29:42] "GET /api/surf-spots/ HTTP/1.1" 200 723
+Unauthorized: /api/surf-spots/1/
+[27/Aug/2025 00:29:43] "GET /api/surf-spots/1/ HTTP/1.1" 401 58
+[27/Aug/2025 00:29:44] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9111
+Method Not Allowed: /api/contact/
+[27/Aug/2025 00:29:44] "GET /api/contact/ HTTP/1.1" 405 40
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:29:46] "GET /api/chatbot/ HTTP/1.1" 400 29
+[27/Aug/2025 00:29:46] "GET /api/chatbot/faq/ HTTP/1.1" 200 4874
+Forbidden: /api/chatbot/analytics/
+[27/Aug/2025 00:29:47] "GET /api/chatbot/analytics/ HTTP/1.1" 403 32
+Bad Request: /api/windy/forecast/
+[27/Aug/2025 00:29:47] "GET /api/windy/forecast/ HTTP/1.1" 400 38
+Bad Request: /api/windy/optimal-times/
+[27/Aug/2025 00:29:47] "GET /api/windy/optimal-times/ HTTP/1.1" 400 38
+Bad Request: /api/windy/conditions-summary/
+[27/Aug/2025 00:29:47] "GET /api/windy/conditions-summary/ HTTP/1.1" 400 38
+Unauthorized: /api/ai/demand-forecast/
+[27/Aug/2025 00:29:47] "GET /api/ai/demand-forecast/ HTTP/1.1" 401 58
+Not Found: /api/
+[27/Aug/2025 00:30:34] "GET /api/ HTTP/1.1" 404 12575
+[27/Aug/2025 00:30:35] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:30:35] "GET /api/surf-club/profile/ HTTP/1.1" 200 378
+[27/Aug/2025 00:30:35] "GET /api/surf-club/monitors/ HTTP/1.1" 200 130
+[27/Aug/2025 00:30:35] "GET /api/surf-club/equipments/ HTTP/1.1" 200 17
+[27/Aug/2025 00:30:35] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 22
+[27/Aug/2025 00:30:35] "GET /api/surf-club/surf-lessons/ HTTP/1.1" 200 18
+[27/Aug/2025 00:30:36] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[27/Aug/2025 00:30:36] "GET /api/surf-club/orders/ HTTP/1.1" 200 13
+[27/Aug/2025 00:30:36] "GET /api/surf-club/statistics/ HTTP/1.1" 200 158
+[27/Aug/2025 00:30:36] "GET /api/surfer/profile/ HTTP/1.1" 200 469
+[27/Aug/2025 00:30:37] "GET /api/surf-spots/ HTTP/1.1" 200 723
+[27/Aug/2025 00:30:37] "GET /api/surf-spots/1/ HTTP/1.1" 200 407
+[27/Aug/2025 00:30:38] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9111
+Method Not Allowed: /api/contact/
+[27/Aug/2025 00:30:38] "GET /api/contact/ HTTP/1.1" 405 40
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:30:38] "GET /api/chatbot/ HTTP/1.1" 400 29
+[27/Aug/2025 00:30:39] "GET /api/chatbot/faq/ HTTP/1.1" 200 4874
+Forbidden: /api/chatbot/analytics/
+[27/Aug/2025 00:30:39] "GET /api/chatbot/analytics/ HTTP/1.1" 403 32
+Bad Request: /api/windy/forecast/
+[27/Aug/2025 00:30:39] "GET /api/windy/forecast/ HTTP/1.1" 400 38
+Bad Request: /api/windy/optimal-times/
+[27/Aug/2025 00:30:39] "GET /api/windy/optimal-times/ HTTP/1.1" 400 38
+Bad Request: /api/windy/conditions-summary/
+[27/Aug/2025 00:30:39] "GET /api/windy/conditions-summary/ HTTP/1.1" 400 38
+[27/Aug/2025 00:30:40] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 187
+[27/Aug/2025 00:30:40] "POST /api/surf-club/add-monitor/ HTTP/1.1" 201 115
+Bad Request: /api/surf-club/add-equipment/
+[27/Aug/2025 00:30:40] "POST /api/surf-club/add-equipment/ HTTP/1.1" 400 46
+Not Found: /api/
+[27/Aug/2025 00:31:14] "GET /api/ HTTP/1.1" 404 12575
+[27/Aug/2025 00:31:14] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:31:14] "GET /api/surf-club/profile/ HTTP/1.1" 200 378
+[27/Aug/2025 00:31:14] "GET /api/surf-club/monitors/ HTTP/1.1" 200 246
+[27/Aug/2025 00:31:14] "GET /api/surf-club/equipments/ HTTP/1.1" 200 17
+[27/Aug/2025 00:31:14] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 22
+[27/Aug/2025 00:31:15] "GET /api/surf-club/surf-lessons/ HTTP/1.1" 200 18
+[27/Aug/2025 00:31:15] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[27/Aug/2025 00:31:15] "GET /api/surf-club/orders/ HTTP/1.1" 200 13
+[27/Aug/2025 00:31:15] "GET /api/surf-club/statistics/ HTTP/1.1" 200 158
+[27/Aug/2025 00:31:16] "GET /api/surfer/profile/ HTTP/1.1" 200 469
+[27/Aug/2025 00:31:16] "GET /api/surf-spots/ HTTP/1.1" 200 723
+[27/Aug/2025 00:31:16] "GET /api/surf-spots/1/ HTTP/1.1" 200 407
+[27/Aug/2025 00:31:17] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9111
+Method Not Allowed: /api/contact/
+[27/Aug/2025 00:31:17] "GET /api/contact/ HTTP/1.1" 405 40
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:31:17] "GET /api/chatbot/ HTTP/1.1" 400 29
+[27/Aug/2025 00:31:18] "GET /api/chatbot/faq/ HTTP/1.1" 200 4874
+Forbidden: /api/chatbot/analytics/
+[27/Aug/2025 00:31:18] "GET /api/chatbot/analytics/ HTTP/1.1" 403 32
+Bad Request: /api/windy/forecast/
+[27/Aug/2025 00:31:18] "GET /api/windy/forecast/ HTTP/1.1" 400 38
+Bad Request: /api/windy/optimal-times/
+[27/Aug/2025 00:31:18] "GET /api/windy/optimal-times/ HTTP/1.1" 400 38
+Bad Request: /api/windy/conditions-summary/
+[27/Aug/2025 00:31:19] "GET /api/windy/conditions-summary/ HTTP/1.1" 400 38
+[27/Aug/2025 00:31:19] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 187
+[27/Aug/2025 00:31:19] "POST /api/surf-club/add-monitor/ HTTP/1.1" 201 115
+Bad Request: /api/surf-club/add-equipment/
+[27/Aug/2025 00:31:19] "POST /api/surf-club/add-equipment/ HTTP/1.1" 400 46
+Not Found: /api/
+[27/Aug/2025 00:33:00] "GET /api/ HTTP/1.1" 404 12575
+[27/Aug/2025 00:33:00] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:33:00] "GET /api/surf-club/profile/ HTTP/1.1" 200 378
+[27/Aug/2025 00:33:01] "GET /api/surf-club/monitors/ HTTP/1.1" 200 362
+[27/Aug/2025 00:33:01] "GET /api/surf-club/equipments/ HTTP/1.1" 200 17
+[27/Aug/2025 00:33:01] "GET /api/surf-club/lesson-schedules/ HTTP/1.1" 200 22
+[27/Aug/2025 00:33:01] "GET /api/surf-club/surf-lessons/ HTTP/1.1" 200 18
+[27/Aug/2025 00:33:01] "GET /api/surf-club/surf-sessions/ HTTP/1.1" 200 20
+[27/Aug/2025 00:33:02] "GET /api/surf-club/orders/ HTTP/1.1" 200 13
+[27/Aug/2025 00:33:02] "GET /api/surf-club/statistics/ HTTP/1.1" 200 158
+[27/Aug/2025 00:33:02] "GET /api/surfer/profile/ HTTP/1.1" 200 469
+[27/Aug/2025 00:33:02] "GET /api/surf-spots/ HTTP/1.1" 200 723
+[27/Aug/2025 00:33:02] "GET /api/surf-spots/1/ HTTP/1.1" 200 407
+[27/Aug/2025 00:33:03] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9111
+Method Not Allowed: /api/contact/
+[27/Aug/2025 00:33:03] "GET /api/contact/ HTTP/1.1" 405 40
+Bad Request: /api/chatbot/
+[27/Aug/2025 00:33:04] "GET /api/chatbot/ HTTP/1.1" 400 29
+[27/Aug/2025 00:33:04] "GET /api/chatbot/faq/ HTTP/1.1" 200 4874
+Forbidden: /api/chatbot/analytics/
+[27/Aug/2025 00:33:04] "GET /api/chatbot/analytics/ HTTP/1.1" 403 32
+Bad Request: /api/windy/forecast/
+[27/Aug/2025 00:33:04] "GET /api/windy/forecast/ HTTP/1.1" 400 38
+Bad Request: /api/windy/optimal-times/
+[27/Aug/2025 00:33:05] "GET /api/windy/optimal-times/ HTTP/1.1" 400 38
+Bad Request: /api/windy/conditions-summary/
+[27/Aug/2025 00:33:05] "GET /api/windy/conditions-summary/ HTTP/1.1" 400 38
+[27/Aug/2025 00:33:05] "GET /api/ai/demand-forecast/ HTTP/1.1" 200 187
+[27/Aug/2025 00:33:05] "POST /api/surf-club/add-monitor/ HTTP/1.1" 201 115
+Bad Request: /api/surf-club/add-equipment/
+[27/Aug/2025 00:33:05] "POST /api/surf-club/add-equipment/ HTTP/1.1" 400 46
+[27/Aug/2025 00:42:45] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:42:45] "GET /api/surf-spots/ HTTP/1.1" 200 723
+[27/Aug/2025 00:42:45] "GET /api/surf-spots/1/ HTTP/1.1" 200 407
+[27/Aug/2025 00:42:45] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 9112
+Not Found: /api/surf-clubs/1/lessons/
+[27/Aug/2025 00:42:45] "GET /api/surf-clubs/1/lessons/ HTTP/1.1" 404 32
+Not Found: /api/surf-clubs/1/equipments/
+[27/Aug/2025 00:42:45] "GET /api/surf-clubs/1/equipments/ HTTP/1.1" 404 32
+Bad Request: /api/surfers/book_surf_lesson/
+[27/Aug/2025 00:42:45] "POST /api/surfers/book_surf_lesson/ HTTP/1.1" 400 29
+Bad Request: /api/surfers/add-order/
+[27/Aug/2025 00:42:45] "POST /api/surfers/add-order/ HTTP/1.1" 400 37
+Bad Request: /api/contact/
+[27/Aug/2025 00:42:45] "POST /api/contact/ HTTP/1.1" 400 82
+[27/Aug/2025 00:43:40] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:43:40] "GET /api/surf-spots/ HTTP/1.1" 200 723
+[27/Aug/2025 00:43:41] "POST /api/user/register/ HTTP/1.1" 201 42
+Method Not Allowed: /api/surfer/profile/
+[27/Aug/2025 00:43:41] "PUT /api/surfer/profile/ HTTP/1.1" 405 40
+[27/Aug/2025 00:43:41] "GET /api/surf-spots/prevision/1/ HTTP/1.1" 200 475
+[27/Aug/2025 00:44:42] "GET /api/surf-spots/ HTTP/1.1" 200 723
+[27/Aug/2025 00:44:42] "POST /api/user/register/ HTTP/1.1" 201 42
+Unauthorized: /api/surfer/profile/
+[27/Aug/2025 00:44:42] "PUT /api/surfer/profile/ HTTP/1.1" 401 58
+[27/Aug/2025 00:48:18] "POST /api/token/ HTTP/1.1" 200 483
+[27/Aug/2025 00:48:18] "GET /api/surf-spots/ HTTP/1.1" 200 723
+Bad Request: /api/user/register/
+[27/Aug/2025 00:48:18] "POST /api/user/register/ HTTP/1.1" 400 57
+Method Not Allowed: /api/surfer/profile/
+[27/Aug/2025 00:48:18] "PUT /api/surfer/profile/ HTTP/1.1" 405 40

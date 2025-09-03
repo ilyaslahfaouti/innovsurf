@@ -1,0 +1,169 @@
+.reserve-session-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-session-title {
+    font-size: 2rem;
+    color: #3D5798;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reserve-session-subtitle {
+    font-size: 1.5rem;
+    color: #289db9;
+    margin-bottom: 15px;
+}
+
+.reserve-session-error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reserve-session-list ul,
+.reserve-equipments-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reserve-session-list li,
+.reserve-equipments-list li {
+    margin-bottom: 10px;
+}
+
+.session-btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    background-color: #289db9 !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.session-btn:hover {
+    background-color: #0056b3;
+}
+
+.session-btn.selected {
+    background-color: #3D5798 !important;
+}
+
+.reserve-session-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.session-details-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.monitor-photo {
+    max-width: 120px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.reserve-equipments-section {
+    margin-top: 20px;
+}
+
+.reserve-equipments-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.equipment-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.equipment-card.selected {
+    border: 2px solid #007bff;
+}
+
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.equipment-photo {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.equipment-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.equipment-overlay {
+    padding: 10px;
+    text-align: center;
+}
+
+.quantity-selector {
+    margin-top: 10px;
+}
+
+.reserve-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reserve-submit-btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #3D5798 !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.reserve-submit-btn:hover {
+    background-color: #289db9 !important;
+}

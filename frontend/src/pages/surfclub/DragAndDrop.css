@@ -1,0 +1,26 @@
+.drag-drop-zone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.drag-drop-zone.dragging {
+    background-color: #e9f7ff;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.file-list li {
+    margin: 5px 0;
+    font-size: 14px;
+}

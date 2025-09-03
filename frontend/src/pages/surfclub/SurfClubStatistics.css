@@ -1,0 +1,63 @@
+
+
+.surfclub-statistics {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.statistics-title {
+    font-size: 2rem;
+    color: #3D5798 ;
+    margin-bottom: 40px;
+}
+
+.statistics-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.statistics-cards h2{
+    color: #ffffff;
+}
+.statistics-card {
+    flex: 1 1 calc(33% - 20px);
+    background-color: #3D5798;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.statistics-card:hover {
+    transform: translateY(-5px);
+}
+
+.statistics-card h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.statistics-card p {
+    color: #fff;
+}
+
+.card-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.error-message,
+.loading-message {
+    font-size: 1.5rem;
+    color: #ff4d4f;
+    text-align: center;
+    margin-top: 50px;
+}

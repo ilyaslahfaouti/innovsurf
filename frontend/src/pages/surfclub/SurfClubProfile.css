@@ -1,0 +1,134 @@
+.surfclub-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.surfclub-delete-button{
+ 
+        background-color: #ff2600;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-left: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        border: #ff2600;
+    
+}
+h1 {
+    font-size: 2.5rem;
+    color: #3D5798;
+    margin: 0;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    background-color: #3D5798;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.profile-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.club-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 2;
+    min-width: 400px;
+}
+
+
+
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+p strong {
+    color: #333;
+}
+
+.user-info i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.club-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.logo-container {
+    margin-right: 20px;
+    flex-shrink: 0;  /* Ensures the logo doesn't shrink */
+}
+
+.club-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.club-details {
+    text-align: left;
+    flex-grow: 1;  /* Allows details to take up remaining space */
+}
+

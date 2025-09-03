@@ -1,0 +1,67 @@
+# Requirements pour les fonctionnalités IA de YalaSurf
+# Machine Learning et Data Science
+
+# Core ML libraries
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Deep Learning (optionnel pour futures améliorations)
+# tensorflow>=2.13.0
+# torch>=2.0.0
+
+# Data visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Model persistence
+joblib>=1.3.0
+pickle-mixin>=1.0.2
+
+# Statistical analysis
+statsmodels>=0.14.0
+
+# Feature engineering
+feature-engine>=1.6.0
+
+# Model evaluation
+mlflow>=2.5.0
+
+# Data preprocessing
+category-encoders>=2.6.0
+
+# Time series analysis
+prophet>=1.1.4
+
+# Natural Language Processing (pour le chatbot avancé)
+# transformers>=4.30.0
+# sentence-transformers>=2.2.0
+
+# API et web
+requests>=2.31.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Database
+django>=4.2.0
+djangorestframework>=3.14.0
+
+# Utilities
+python-dotenv>=1.0.0
+pytz>=2023.3
+python-dateutil>=2.8.2
+
+# Development tools
+jupyter>=1.0.0
+ipython>=8.14.0
+
+# Testing
+pytest>=7.4.0
+pytest-django>=4.5.0
+
+# Code quality
+black>=23.7.0
+flake8>=6.0.0
+isort>=5.12.0

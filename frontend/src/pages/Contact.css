@@ -1,0 +1,199 @@
+/* Header section */
+.contact-page-header-section {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 80vh; /* Full section height */
+  background-image: url('../assets/contact.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Black overlay applied only to the background image */
+.contact-page-header-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.294); /* Black overlay with transparency */
+  z-index: 1; /* Ensure it's behind the text */
+}
+
+.contact-page-overlay-text {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-page-overlay-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #ffffff; /* White text */
+}
+
+.contact-page-overlay-text p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  line-height: 1.4;
+  color: #f0f0f0; /* Light white color for the paragraph */
+}
+
+/* Box Container (below the header) */
+.contact-page-info-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.contact-page-info-box {
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 20px;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-page-info-box:hover {
+  background-color: rgba(0, 0, 0, 0.67);
+}
+
+.contact-page-info-box h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #289db9; /* Blue color for titles in the boxes */
+}
+
+.contact-page-info-box i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #289db9;
+}
+
+.contact-page-info-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #d1d1d1; 
+}
+
+.contact-page-form-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-page-form-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3D5798;
+}
+
+.contact-page-form-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-page-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-page-image img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.contact-page-form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-page-form-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-page-form-group input,
+.contact-page-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-page-form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-page-submit-button {
+  background-color: #289db9;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.contact-page-submit-button:hover {
+  background-color: #3D5798;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-page-overlay-text h1 {
+    font-size: 2.5rem; /* Smaller h1 for smaller screens */
+  }
+
+  .contact-page-info-boxes {
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    gap: 20px;
+  }
+
+  .contact-page-form-container {
+    flex-direction: column;
+  }
+
+  .contact-page-form {
+    max-width: 100%;
+  }
+
+  .contact-page-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page-overlay-text h1 {
+    font-size: 1.5rem; /* Further reduce font size on very small screens */
+  }
+
+  .contact-page-info-box {
+    padding: 10px;
+  }
+}

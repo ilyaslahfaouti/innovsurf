@@ -1,0 +1,105 @@
+.equipment-list-page-specific {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.equipment-list-title-specific{
+    color: #3D5798;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.equipment-list-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.equipment-grid-specific {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.equipment-item-specific {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+}
+
+.equipment-item-specific:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.equipment-badge-specific {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFD700;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.equipment-photo-specific {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.equipment-info-specific {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.equipment-name-specific {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.equipment-price-specific {
+    font-size: 1.1rem;
+    color: #289db9;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.equipment-details-link-specific {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3D5798;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: auto;
+}
+
+.equipment-details-link-specific:hover {
+    background-color: #289db9;
+}

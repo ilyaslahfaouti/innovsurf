@@ -1,0 +1,176 @@
+.surfspot-details-page {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.surfspot-info h2{
+    color:#3D5798 ;
+    
+}
+.surfspot-details-page-loading {
+    font-size: 1.5rem;
+    color: #666;
+    text-align: center;
+}
+
+.surfspot-details-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.surfspot-info {
+    flex-direction: column;
+    justify-self: unset;
+    align-items: flex-start;
+    flex: 1 1 300px;
+    padding-right: 20px;
+}
+
+.surfspot-info p {
+   font-size: 16px;
+   color: #333;
+}
+
+
+.surfspot-info-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.surfspot-info-description {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.surfspot-info-address {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.surfspot-slider {
+    position: relative;
+    flex: 1 1 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px; /* Add margin to separate slider from info on small screens */
+    width: 100%;
+}
+
+.surfspot-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.surfspot-slide {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.surfspot-info-address i{
+    color:#289db9;
+}
+.surfspot-info-address{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.surfspot-clubs-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3D5798;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.surfspot-club-list {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .surfspot-details-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .surfspot-info {
+        padding-right: 0;
+        margin-bottom: 20px;
+        flex: 1 1 100%;
+    }
+
+    .surfspot-slider {
+        flex: 1 1 100%;
+    }
+
+    .surfspot-info-title {
+        font-size: 2.5rem;
+    }
+
+    .surfspot-info-description {
+        font-size: 1.3rem;
+    }
+
+    .surfspot-info-address {
+        font-size: 1rem;
+    }
+
+    .surfspot-slide {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .surfspot-details-card {
+        padding: 10px;
+    }
+
+    .surfspot-info-title {
+        font-size: 2rem;
+    }
+
+    .surfspot-info-description {
+        font-size: 1.2rem;
+    }
+
+    .surfspot-info-address {
+        font-size: 0.9rem;
+    }
+
+    .surfspot-slider {
+        margin-top: 10px;
+    }
+
+    .surfspot-slide {
+        height: 250px;
+    }
+}

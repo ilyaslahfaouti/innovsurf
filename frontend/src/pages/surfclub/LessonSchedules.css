@@ -1,0 +1,78 @@
+.lesson-schedules-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lesson-add-link {
+  background-color: #3D5798;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+.schedule-info i{
+  color: #289db9;
+}
+.lesson-add-link:hover {
+  background-color: #3D5798;
+}
+
+.lesson-schedules-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-schedule-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-info p {
+  margin: 5px 0;
+}
+
+.schedule-actions {
+  display: flex;
+  align-items: center;
+}
+
+.edit-link, .delete-button {
+  color: #007bff;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.edit-link:hover, .delete-button:hover {
+  color: #0056b3;
+}
+
+.delete-button:hover {
+  color: #c82333;
+}

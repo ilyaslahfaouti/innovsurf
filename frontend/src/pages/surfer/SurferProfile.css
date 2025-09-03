@@ -1,0 +1,98 @@
+.surfer-profile-page {
+    padding: 20px;
+}
+
+.surfer-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.surfer-edit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.surfer-delete-button{
+    background-color: #ff2600;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    border: #ff2600;
+}
+.details-button{
+    background-color: #3D5798;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    border: #3D5798;
+}
+.surfer-profile-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.surfer-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.surfer-session, .surfer-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.surfer-session-photo, .order-item-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.session-separator, .order-separator {
+    margin-top: 10px;
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.surfer-orders, .surfer-order-details {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .surfer-profile-container {
+        flex-direction: column;
+    }
+
+    .surfer-edit-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .surfer-session, .surfer-order {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .surfer-session-photo, .order-item-photo {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+}

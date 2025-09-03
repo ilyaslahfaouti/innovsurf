@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖼️ Captures d'Écran - Suite InnovSurf API Testing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 150px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .stat-label {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .category {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .category h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .file-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .file-card:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+        }
+        
+        .file-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .file-info {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .file-preview {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+        
+        .overview-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        .overview-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        .overview-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .overview-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .footer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer p {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .footer .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .file-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🖼️ Suite InnovSurf API Testing</h1>
+            <p>Collection complète d'outils pour tester, documenter et capturer vos APIs avec des captures d'écran automatiques</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">11</div>
+                <div class="stat-label">Captures Créées</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Catégories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">68.2%</div>
+                <div class="stat-label">Taux de Succès API</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">22</div>
+                <div class="stat-label">Endpoints Testés</div>
+            </div>
+        </div>
+        
+        <div class="overview-section">
+            <h2>📊 Vue d'Ensemble Complète</h2>
+            <img src="OVERVIEW_suite_complete.png" alt="Vue d'ensemble de la suite" class="overview-image" onclick="openImage(this.src)">
+        </div>
+        
+        <div class="categories">
+            <div class="category">
+                <h2>🚀 Scripts de Lancement</h2>
+                <div class="file-grid">
+                    <div class="file-card">
+                        <img src="quick_test_sh_screenshot.png" alt="quick_test.sh" class="file-preview" onclick="openImage(this.src)">
+                        <h3>quick_test.sh</h3>
+                        <div class="file-info">Interface de lancement rapide avec menu interactif</div>
+                        <div class="file-actions">
+                            <a href="quick_test_sh_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../quick_test.sh" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                    <div class="file-card">
+                        <img src="setup_api_testing_sh_screenshot.png" alt="setup_api_testing.sh" class="file-preview" onclick="openImage(this.src)">
+                        <h3>setup_api_testing.sh</h3>
+                        <div class="file-info">Installation automatique des dépendances</div>
+                        <div class="file-actions">
+                            <a href="setup_api_testing_sh_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../setup_api_testing.sh" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>🔧 Outils de Configuration</h2>
+                <div class="file-grid">
+                    <div class="file-card">
+                        <img src="setup_test_user_py_screenshot.png" alt="setup_test_user.py" class="file-preview" onclick="openImage(this.src)">
+                        <h3>setup_test_user.py</h3>
+                        <div class="file-info">Configuration automatique de l'utilisateur de test</div>
+                        <div class="file-actions">
+                            <a href="setup_test_user_py_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../setup_test_user.py" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>🧪 Outils de Test</h2>
+                <div class="file-grid">
+                    <div class="file-card">
+                        <img src="simple_api_tester_py_screenshot.png" alt="simple_api_tester.py" class="file-preview" onclick="openImage(this.src)">
+                        <h3>simple_api_tester.py</h3>
+                        <div class="file-info">Tests rapides de toutes les APIs</div>
+                        <div class="file-actions">
+                            <a href="simple_api_tester_py_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../simple_api_tester.py" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                    <div class="file-card">
+                        <img src="api_screenshot_tool_py_screenshot.png" alt="api_screenshot_tool.py" class="file-preview" onclick="openImage(this.src)">
+                        <h3>api_screenshot_tool.py</h3>
+                        <div class="file-info">Tests complets avec captures d'écran</div>
+                        <div class="file-actions">
+                            <a href="api_screenshot_tool_py_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../api_screenshot_tool.py" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                    <div class="file-card">
+                        <img src="test_forecast_api_py_screenshot.png" alt="test_forecast_api.py" class="file-preview" onclick="openImage(this.src)">
+                        <h3>test_forecast_api.py</h3>
+                        <div class="file-info">Tests spécialisés pour les prévisions météo</div>
+                        <div class="file-actions">
+                            <a href="test_forecast_api_py_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../test_forecast_api.py" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                    <div class="file-card">
+                        <img src="smart_api_tester_py_screenshot.png" alt="smart_api_tester.py" class="file-preview" onclick="openImage(this.src)">
+                        <h3>smart_api_tester.py</h3>
+                        <div class="file-info">Tests intelligents avec gestion des erreurs</div>
+                        <div class="file-actions">
+                            <a href="smart_api_tester_py_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../smart_api_tester.py" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                    <div class="file-card">
+                        <img src="fix_auth_py_screenshot.png" alt="fix_auth.py" class="file-preview" onclick="openImage(this.src)">
+                        <h3>fix_auth.py ⭐</h3>
+                        <div class="file-info">Tests avec authentification corrigée (RECOMMANDÉ)</div>
+                        <div class="file-actions">
+                            <a href="fix_auth_py_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../fix_auth.py" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>📚 Documentation</h2>
+                <div class="file-grid">
+                    <div class="file-card">
+                        <img src="README_API_TESTING_md_screenshot.png" alt="README_API_TESTING.md" class="file-preview" onclick="openImage(this.src)">
+                        <h3>README_API_TESTING.md</h3>
+                        <div class="file-info">Guide d'utilisation des outils de test</div>
+                        <div class="file-actions">
+                            <a href="README_API_TESTING_md_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../README_API_TESTING.md" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                    <div class="file-card">
+                        <img src="README_FINAL_md_screenshot.png" alt="README_FINAL.md" class="file-preview" onclick="openImage(this.src)">
+                        <h3>README_FINAL.md</h3>
+                        <div class="file-info">Guide complet et final de la suite</div>
+                        <div class="file-actions">
+                            <a href="README_FINAL_md_screenshot.png" class="btn btn-primary" target="_blank">Voir en grand</a>
+                            <a href="../README_FINAL.md" class="btn btn-secondary" target="_blank">Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><span class="highlight">🎯 Utilisation rapide:</span> ./quick_test.sh</p>
+            <p><span class="highlight">🔑 Identifiants de test:</span> test@innovsurf.com / testpass123</p>
+            <p><span class="highlight">📊 Taux de succès actuel:</span> 68.2% (15/22 APIs fonctionnent)</p>
+            <p>🚀 Bon surf avec vos APIs ! 🏄‍♂️</p>
+        </div>
+    </div>
+    
+    <script>
+        function openImage(src) {
+            window.open(src, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+        }
+        
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.file-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'all 0.5s ease';
+                    
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

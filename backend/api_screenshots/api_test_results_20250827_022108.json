@@ -1,0 +1,1147 @@
+[
+  {
+    "endpoint": "surf_spots",
+    "url": "http://localhost:8000/api/surf-spots/",
+    "method": "GET",
+    "status_code": 200,
+    "response_time": 0.017544,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:00 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "application/json",
+      "Vary": "Accept, origin, Cookie",
+      "Allow": "GET, OPTIONS",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "664",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": true,
+    "data": [
+      {
+        "id": 1,
+        "surf_clubs": [
+          {
+            "id": 2,
+            "name": "InnovSurf Club Taghazout",
+            "logo": null,
+            "surf_spot": 1
+          }
+        ],
+        "photos": [
+          {
+            "id": 1,
+            "image": "/media/uploads/spot_taghazout.jpg",
+            "surf_spot": 1,
+            "equipment": null
+          }
+        ],
+        "name": "Taghazout",
+        "zip_code": "80022",
+        "address": "Taghazout, Morocco",
+        "description": "World-class right-handers",
+        "latitude": 30.542,
+        "longitude": -9.71
+      },
+      {
+        "id": 2,
+        "surf_clubs": [
+          {
+            "id": 3,
+            "name": "InnovSurf Club Agadir",
+            "logo": null,
+            "surf_spot": 2
+          }
+        ],
+        "photos": [
+          {
+            "id": 2,
+            "image": "/media/uploads/spot_agadir.jpg",
+            "surf_spot": 2,
+            "equipment": null
+          }
+        ],
+        "name": "Agadir",
+        "zip_code": "80000",
+        "address": "Agadir, Morocco",
+        "description": "Beach breaks and mellow waves",
+        "latitude": 30.427,
+        "longitude": -9.598
+      }
+    ],
+    "data_size": 727
+  },
+  {
+    "endpoint": "surf_spot_detail",
+    "url": "http://localhost:8000/api/surf-spots/1/",
+    "method": "GET",
+    "status_code": 401,
+    "response_time": 0.003503,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:01 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "application/json",
+      "WWW-Authenticate": "Bearer realm=\"api\"",
+      "Vary": "Accept, origin",
+      "Allow": "GET, OPTIONS",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "58",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": {
+      "detail": "Authentication credentials were not provided."
+    },
+    "data_size": 59
+  },
+  {
+    "endpoint": "forecast",
+    "url": "http://localhost:8000/api/surf-spots/prevision/1/",
+    "method": "GET",
+    "status_code": 200,
+    "response_time": 0.585023,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:02 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "application/json",
+      "Vary": "Accept, origin, Cookie",
+      "Allow": "GET, OPTIONS",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "9052",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": true,
+    "data": {
+      "id": 1,
+      "surf_clubs": [
+        {
+          "id": 2,
+          "name": "InnovSurf Club Taghazout",
+          "logo": null,
+          "surf_spot": 1
+        }
+      ],
+      "photos": [
+        {
+          "id": 1,
+          "image": "/media/uploads/spot_taghazout.jpg",
+          "surf_spot": 1,
+          "equipment": null
+        }
+      ],
+      "name": "Taghazout",
+      "zip_code": "80022",
+      "address": "Taghazout, Morocco",
+      "description": "World-class right-handers",
+      "latitude": 30.542,
+      "longitude": -9.71,
+      "forecast": {
+        "hours": [
+          {
+            "airTemperature": {
+              "ecmwf": 21.43,
+              "ecmwf:aifs": 20.52,
+              "noaa": 19.85,
+              "sg": 21.43
+            },
+            "swellPeriod": {
+              "meteo": 13.17,
+              "noaa": 16.31,
+              "sg": 13.17
+            },
+            "time": "2025-08-27T00:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.79,
+              "noaa": 20.51,
+              "sg": 22.79
+            },
+            "waveHeight": {
+              "ecmwf": 1.77,
+              "meteo": 2.72,
+              "noaa": 2.45,
+              "sg": 1.77
+            },
+            "windSpeed": {
+              "ecmwf": 4.81,
+              "ecmwf:aifs": 1.91,
+              "noaa": 2.3,
+              "sg": 4.81
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 21.13,
+              "ecmwf:aifs": 20.29,
+              "noaa": 19.58,
+              "sg": 21.13
+            },
+            "swellPeriod": {
+              "meteo": 13.05,
+              "noaa": 16.08,
+              "sg": 13.05
+            },
+            "time": "2025-08-27T01:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.71,
+              "noaa": 20.06,
+              "sg": 22.71
+            },
+            "waveHeight": {
+              "ecmwf": 1.77,
+              "meteo": 2.7,
+              "noaa": 2.41,
+              "sg": 1.77
+            },
+            "windSpeed": {
+              "ecmwf": 3.74,
+              "ecmwf:aifs": 1.83,
+              "noaa": 1.84,
+              "sg": 3.74
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.83,
+              "ecmwf:aifs": 20.06,
+              "noaa": 19.31,
+              "sg": 20.83
+            },
+            "swellPeriod": {
+              "meteo": 12.93,
+              "noaa": 15.85,
+              "sg": 12.93
+            },
+            "time": "2025-08-27T02:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.62,
+              "noaa": 19.6,
+              "sg": 22.62
+            },
+            "waveHeight": {
+              "ecmwf": 1.77,
+              "meteo": 2.67,
+              "noaa": 2.36,
+              "sg": 1.77
+            },
+            "windSpeed": {
+              "ecmwf": 2.66,
+              "ecmwf:aifs": 1.74,
+              "noaa": 1.39,
+              "sg": 2.66
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.54,
+              "ecmwf:aifs": 19.82,
+              "noaa": 19.04,
+              "sg": 20.54
+            },
+            "swellPeriod": {
+              "meteo": 12.81,
+              "noaa": 15.62,
+              "sg": 12.81
+            },
+            "time": "2025-08-27T03:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.52,
+              "noaa": 19.15,
+              "sg": 22.52
+            },
+            "waveHeight": {
+              "ecmwf": 1.77,
+              "meteo": 2.65,
+              "noaa": 2.32,
+              "sg": 1.77
+            },
+            "windSpeed": {
+              "ecmwf": 1.59,
+              "ecmwf:aifs": 1.66,
+              "noaa": 0.93,
+              "sg": 1.59
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.32,
+              "ecmwf:aifs": 19.59,
+              "noaa": 18.84,
+              "sg": 20.32
+            },
+            "swellPeriod": {
+              "meteo": 12.72,
+              "noaa": 15.43,
+              "sg": 12.72
+            },
+            "time": "2025-08-27T04:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.41,
+              "noaa": 18.77,
+              "sg": 22.41
+            },
+            "waveHeight": {
+              "ecmwf": 1.77,
+              "meteo": 2.64,
+              "noaa": 2.28,
+              "sg": 1.77
+            },
+            "windSpeed": {
+              "ecmwf": 1.76,
+              "ecmwf:aifs": 1.58,
+              "noaa": 0.9,
+              "sg": 1.76
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.11,
+              "ecmwf:aifs": 19.36,
+              "noaa": 18.64,
+              "sg": 20.11
+            },
+            "swellPeriod": {
+              "meteo": 12.62,
+              "noaa": 15.25,
+              "sg": 12.62
+            },
+            "time": "2025-08-27T05:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.3,
+              "noaa": 18.38,
+              "sg": 22.3
+            },
+            "waveHeight": {
+              "ecmwf": 1.77,
+              "meteo": 2.63,
+              "noaa": 2.24,
+              "sg": 1.77
+            },
+            "windSpeed": {
+              "ecmwf": 1.92,
+              "ecmwf:aifs": 1.49,
+              "noaa": 0.88,
+              "sg": 1.92
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.89,
+              "ecmwf:aifs": 19.12,
+              "noaa": 18.44,
+              "sg": 19.89
+            },
+            "swellPeriod": {
+              "meteo": 12.53,
+              "noaa": 15.06,
+              "sg": 12.53
+            },
+            "time": "2025-08-27T06:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.19,
+              "noaa": 18.0,
+              "sg": 22.19
+            },
+            "waveHeight": {
+              "ecmwf": 1.76,
+              "meteo": 2.62,
+              "noaa": 2.2,
+              "sg": 1.76
+            },
+            "windSpeed": {
+              "ecmwf": 2.09,
+              "ecmwf:aifs": 1.41,
+              "noaa": 0.85,
+              "sg": 2.09
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.82,
+              "ecmwf:aifs": 19.73,
+              "noaa": 19.8,
+              "sg": 19.82
+            },
+            "swellPeriod": {
+              "meteo": 12.46,
+              "noaa": 14.88,
+              "sg": 12.46
+            },
+            "time": "2025-08-27T07:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.11,
+              "noaa": 24.06,
+              "sg": 22.11
+            },
+            "waveHeight": {
+              "ecmwf": 1.75,
+              "meteo": 2.61,
+              "noaa": 2.18,
+              "sg": 1.75
+            },
+            "windSpeed": {
+              "ecmwf": 2.56,
+              "ecmwf:aifs": 1.38,
+              "noaa": 1.27,
+              "sg": 2.56
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.75,
+              "ecmwf:aifs": 20.34,
+              "noaa": 21.16,
+              "sg": 19.75
+            },
+            "swellPeriod": {
+              "meteo": 12.38,
+              "noaa": 14.71,
+              "sg": 12.38
+            },
+            "time": "2025-08-27T08:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.06,
+              "noaa": 30.11,
+              "sg": 22.06
+            },
+            "waveHeight": {
+              "ecmwf": 1.74,
+              "meteo": 2.61,
+              "noaa": 2.17,
+              "sg": 1.74
+            },
+            "windSpeed": {
+              "ecmwf": 3.02,
+              "ecmwf:aifs": 1.35,
+              "noaa": 1.7,
+              "sg": 3.02
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.69,
+              "ecmwf:aifs": 20.95,
+              "noaa": 22.51,
+              "sg": 19.69
+            },
+            "swellPeriod": {
+              "meteo": 12.31,
+              "noaa": 14.53,
+              "sg": 12.31
+            },
+            "time": "2025-08-27T09:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.05,
+              "noaa": 36.17,
+              "sg": 22.05
+            },
+            "waveHeight": {
+              "ecmwf": 1.73,
+              "meteo": 2.6,
+              "noaa": 2.15,
+              "sg": 1.73
+            },
+            "windSpeed": {
+              "ecmwf": 3.49,
+              "ecmwf:aifs": 1.31,
+              "noaa": 2.12,
+              "sg": 3.49
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.76,
+              "ecmwf:aifs": 21.56,
+              "noaa": 24.18,
+              "sg": 19.76
+            },
+            "swellPeriod": {
+              "meteo": 12.24,
+              "noaa": 14.52,
+              "sg": 12.24
+            },
+            "time": "2025-08-27T10:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.09,
+              "noaa": 40.97,
+              "sg": 22.09
+            },
+            "waveHeight": {
+              "ecmwf": 1.72,
+              "meteo": 2.59,
+              "noaa": 2.13,
+              "sg": 1.72
+            },
+            "windSpeed": {
+              "ecmwf": 3.15,
+              "ecmwf:aifs": 1.28,
+              "noaa": 2.75,
+              "sg": 3.15
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.84,
+              "ecmwf:aifs": 22.17,
+              "noaa": 25.85,
+              "sg": 19.84
+            },
+            "swellPeriod": {
+              "meteo": 12.18,
+              "noaa": 14.5,
+              "sg": 12.18
+            },
+            "time": "2025-08-27T11:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.18,
+              "noaa": 45.76,
+              "sg": 22.18
+            },
+            "waveHeight": {
+              "ecmwf": 1.7,
+              "meteo": 2.59,
+              "noaa": 2.11,
+              "sg": 1.7
+            },
+            "windSpeed": {
+              "ecmwf": 2.8,
+              "ecmwf:aifs": 1.25,
+              "noaa": 3.37,
+              "sg": 2.8
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 19.91,
+              "ecmwf:aifs": 22.78,
+              "noaa": 27.51,
+              "sg": 19.91
+            },
+            "swellPeriod": {
+              "meteo": 12.11,
+              "noaa": 14.49,
+              "sg": 12.11
+            },
+            "time": "2025-08-27T12:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.24,
+              "noaa": 50.55,
+              "sg": 22.24
+            },
+            "waveHeight": {
+              "ecmwf": 1.69,
+              "meteo": 2.58,
+              "noaa": 2.09,
+              "sg": 1.69
+            },
+            "windSpeed": {
+              "ecmwf": 2.46,
+              "ecmwf:aifs": 1.22,
+              "noaa": 4.0,
+              "sg": 2.46
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.01,
+              "ecmwf:aifs": 22.85,
+              "noaa": 27.3,
+              "sg": 20.01
+            },
+            "swellPeriod": {
+              "meteo": 12.06,
+              "noaa": 14.38,
+              "sg": 12.06
+            },
+            "time": "2025-08-27T13:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.24,
+              "noaa": 49.28,
+              "sg": 22.24
+            },
+            "waveHeight": {
+              "ecmwf": 1.67,
+              "meteo": 2.59,
+              "noaa": 2.11,
+              "sg": 1.67
+            },
+            "windSpeed": {
+              "ecmwf": 3.41,
+              "ecmwf:aifs": 1.76,
+              "noaa": 4.15,
+              "sg": 3.41
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.1,
+              "ecmwf:aifs": 22.91,
+              "noaa": 27.09,
+              "sg": 20.1
+            },
+            "swellPeriod": {
+              "meteo": 12.02,
+              "noaa": 14.26,
+              "sg": 12.02
+            },
+            "time": "2025-08-27T14:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.24,
+              "noaa": 48.01,
+              "sg": 22.24
+            },
+            "waveHeight": {
+              "ecmwf": 1.66,
+              "meteo": 2.59,
+              "noaa": 2.13,
+              "sg": 1.66
+            },
+            "windSpeed": {
+              "ecmwf": 4.36,
+              "ecmwf:aifs": 2.29,
+              "noaa": 4.3,
+              "sg": 4.36
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.19,
+              "ecmwf:aifs": 22.98,
+              "noaa": 26.88,
+              "sg": 20.19
+            },
+            "swellPeriod": {
+              "meteo": 11.97,
+              "noaa": 14.15,
+              "sg": 11.97
+            },
+            "time": "2025-08-27T15:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.23,
+              "noaa": 46.73,
+              "sg": 22.23
+            },
+            "waveHeight": {
+              "ecmwf": 1.64,
+              "meteo": 2.6,
+              "noaa": 2.15,
+              "sg": 1.64
+            },
+            "windSpeed": {
+              "ecmwf": 5.31,
+              "ecmwf:aifs": 2.83,
+              "noaa": 4.45,
+              "sg": 5.31
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 20.82,
+              "ecmwf:aifs": 23.04,
+              "noaa": 26.7,
+              "sg": 20.82
+            },
+            "swellPeriod": {
+              "meteo": 11.9,
+              "noaa": 14.02,
+              "sg": 11.9
+            },
+            "time": "2025-08-27T16:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.23,
+              "noaa": 42.17,
+              "sg": 22.23
+            },
+            "waveHeight": {
+              "ecmwf": 1.64,
+              "meteo": 2.66,
+              "noaa": 2.29,
+              "sg": 1.64
+            },
+            "windSpeed": {
+              "ecmwf": 5.66,
+              "ecmwf:aifs": 3.37,
+              "noaa": 3.78,
+              "sg": 5.66
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 21.45,
+              "ecmwf:aifs": 23.1,
+              "noaa": 26.52,
+              "sg": 21.45
+            },
+            "swellPeriod": {
+              "meteo": 11.83,
+              "noaa": 13.88,
+              "sg": 11.83
+            },
+            "time": "2025-08-27T17:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.22,
+              "noaa": 37.61,
+              "sg": 22.22
+            },
+            "waveHeight": {
+              "ecmwf": 1.65,
+              "meteo": 2.72,
+              "noaa": 2.43,
+              "sg": 1.65
+            },
+            "windSpeed": {
+              "ecmwf": 6.02,
+              "ecmwf:aifs": 3.9,
+              "noaa": 3.11,
+              "sg": 6.02
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 22.08,
+              "ecmwf:aifs": 23.17,
+              "noaa": 26.35,
+              "sg": 22.08
+            },
+            "swellPeriod": {
+              "meteo": 11.76,
+              "noaa": 13.75,
+              "sg": 11.76
+            },
+            "time": "2025-08-27T18:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.22,
+              "noaa": 33.05,
+              "sg": 22.22
+            },
+            "waveHeight": {
+              "ecmwf": 1.65,
+              "meteo": 2.78,
+              "noaa": 2.57,
+              "sg": 1.65
+            },
+            "windSpeed": {
+              "ecmwf": 6.37,
+              "ecmwf:aifs": 4.44,
+              "noaa": 2.44,
+              "sg": 6.37
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 22.14,
+              "ecmwf:aifs": 22.66,
+              "noaa": 24.49,
+              "sg": 22.14
+            },
+            "swellPeriod": {
+              "meteo": 11.72,
+              "noaa": 13.69,
+              "sg": 11.72
+            },
+            "time": "2025-08-27T19:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.26,
+              "noaa": 29.17,
+              "sg": 22.26
+            },
+            "waveHeight": {
+              "ecmwf": 1.63,
+              "meteo": 2.83,
+              "noaa": 2.56,
+              "sg": 1.63
+            },
+            "windSpeed": {
+              "ecmwf": 5.35,
+              "ecmwf:aifs": 3.95,
+              "noaa": 2.38,
+              "sg": 5.35
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 22.2,
+              "ecmwf:aifs": 22.16,
+              "noaa": 22.64,
+              "sg": 22.2
+            },
+            "swellPeriod": {
+              "meteo": 11.67,
+              "noaa": 13.64,
+              "sg": 11.67
+            },
+            "time": "2025-08-27T20:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.33,
+              "noaa": 25.3,
+              "sg": 22.33
+            },
+            "waveHeight": {
+              "ecmwf": 1.62,
+              "meteo": 2.87,
+              "noaa": 2.56,
+              "sg": 1.62
+            },
+            "windSpeed": {
+              "ecmwf": 4.32,
+              "ecmwf:aifs": 3.46,
+              "noaa": 2.31,
+              "sg": 4.32
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 22.26,
+              "ecmwf:aifs": 21.65,
+              "noaa": 20.79,
+              "sg": 22.26
+            },
+            "swellPeriod": {
+              "meteo": 11.63,
+              "noaa": 13.58,
+              "sg": 11.63
+            },
+            "time": "2025-08-27T21:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.4,
+              "noaa": 21.42,
+              "sg": 22.4
+            },
+            "waveHeight": {
+              "ecmwf": 1.6,
+              "meteo": 2.92,
+              "noaa": 2.55,
+              "sg": 1.6
+            },
+            "windSpeed": {
+              "ecmwf": 3.3,
+              "ecmwf:aifs": 2.97,
+              "noaa": 2.25,
+              "sg": 3.3
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 21.79,
+              "ecmwf:aifs": 21.14,
+              "noaa": 20.27,
+              "sg": 21.79
+            },
+            "swellPeriod": {
+              "meteo": 11.58,
+              "noaa": 13.51,
+              "sg": 11.58
+            },
+            "time": "2025-08-27T22:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.46,
+              "noaa": 20.83,
+              "sg": 22.46
+            },
+            "waveHeight": {
+              "ecmwf": 1.59,
+              "meteo": 2.89,
+              "noaa": 2.5,
+              "sg": 1.59
+            },
+            "windSpeed": {
+              "ecmwf": 3.58,
+              "ecmwf:aifs": 2.48,
+              "noaa": 2.38,
+              "sg": 3.58
+            }
+          },
+          {
+            "airTemperature": {
+              "ecmwf": 21.32,
+              "ecmwf:aifs": 20.64,
+              "noaa": 19.76,
+              "sg": 21.32
+            },
+            "swellPeriod": {
+              "meteo": 11.52,
+              "noaa": 13.44,
+              "sg": 11.52
+            },
+            "time": "2025-08-27T23:00:00+00:00",
+            "waterTemperature": {
+              "meto": 22.5,
+              "noaa": 20.24,
+              "sg": 22.5
+            },
+            "waveHeight": {
+              "ecmwf": 1.57,
+              "meteo": 2.86,
+              "noaa": 2.45,
+              "sg": 1.57
+            },
+            "windSpeed": {
+              "ecmwf": 3.85,
+              "ecmwf:aifs": 1.99,
+              "noaa": 2.51,
+              "sg": 3.85
+            }
+          }
+        ],
+        "meta": {
+          "cost": 1,
+          "dailyQuota": 10,
+          "end": "2025-08-27 23:00",
+          "lat": 30.542,
+          "lng": -9.71,
+          "params": [
+            "waveHeight",
+            "airTemperature",
+            "swellPeriod",
+            "windSpeed",
+            "waterTemperature"
+          ],
+          "requestCount": 4,
+          "start": "2025-08-27 00:00"
+        }
+      }
+    },
+    "data_size": 10138
+  },
+  {
+    "endpoint": "surf_clubs",
+    "url": "http://localhost:8000/api/surf-clubs/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.004917,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:02 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12608",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/surf-clubs/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family",
+    "data_size": 12604
+  },
+  {
+    "endpoint": "surf_club_detail",
+    "url": "http://localhost:8000/api/surf-clubs/1/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.010953,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:03 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12614",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/surf-clubs/1/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-fami",
+    "data_size": 12610
+  },
+  {
+    "endpoint": "lessons",
+    "url": "http://localhost:8000/api/lessons/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.008535,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:03 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12599",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/lessons/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: s",
+    "data_size": 12595
+  },
+  {
+    "endpoint": "bookings",
+    "url": "http://localhost:8000/api/bookings/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.010255,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:04 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12602",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/bookings/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: ",
+    "data_size": 12598
+  },
+  {
+    "endpoint": "users",
+    "url": "http://localhost:8000/api/users/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.009966,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:04 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12593",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/users/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: san",
+    "data_size": 12589
+  },
+  {
+    "endpoint": "chatbot",
+    "url": "http://localhost:8000/api/chatbot/",
+    "method": "GET",
+    "status_code": 400,
+    "response_time": 0.003916,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:05 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "application/json",
+      "Vary": "Accept, origin, Cookie",
+      "Allow": "GET, POST, HEAD, OPTIONS",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "29",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": {
+      "error": "Session ID requis"
+    },
+    "data_size": 30
+  },
+  {
+    "endpoint": "analytics",
+    "url": "http://localhost:8000/api/analytics/dashboard/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.00877,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:05 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12635",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/analytics/dashboard/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { fo",
+    "data_size": 12631
+  },
+  {
+    "endpoint": "recommendations",
+    "url": "http://localhost:8000/api/recommendations/",
+    "method": "GET",
+    "status_code": 404,
+    "response_time": 0.064267,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:06 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12623",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/recommendations/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-f",
+    "data_size": 12619
+  },
+  {
+    "endpoint": "windy_api",
+    "url": "http://localhost:8000/api/windy/forecast/",
+    "method": "GET",
+    "status_code": 400,
+    "response_time": 0.002765,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:06 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "application/json",
+      "Vary": "Accept, origin, Cookie",
+      "Allow": "GET, POST, HEAD, OPTIONS",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "38",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": {
+      "error": "Paramètre \"spot\" requis"
+    },
+    "data_size": 43
+  },
+  {
+    "endpoint": "create_lesson",
+    "url": "http://localhost:8000/api/lessons/",
+    "method": "POST",
+    "status_code": 404,
+    "response_time": 0.010434,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:07 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12600",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/lessons/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: s",
+    "data_size": 12596
+  },
+  {
+    "endpoint": "create_booking",
+    "url": "http://localhost:8000/api/bookings/",
+    "method": "POST",
+    "status_code": 404,
+    "response_time": 0.005259,
+    "headers": {
+      "Date": "Wed, 27 Aug 2025 00:21:07 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.7",
+      "Content-Type": "text/html; charset=utf-8",
+      "Vary": "origin",
+      "X-Frame-Options": "DENY",
+      "Content-Length": "12603",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Cross-Origin-Opener-Policy": "same-origin"
+    },
+    "success": false,
+    "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">\n  <title>Page not found at /api/bookings/</title>\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n  <style type=\"text/css\">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n    pre.exception_value { font-family: ",
+    "data_size": 12599
+  }
+]

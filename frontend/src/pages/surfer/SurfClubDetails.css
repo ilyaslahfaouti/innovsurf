@@ -1,0 +1,118 @@
+.surfclub-details-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 75vh;
+}
+
+.surfclub-details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.surfclub-details-header h1{
+    color: #3D5798;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.surfclub-details-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+   
+
+    margin-right: 20px;
+}
+
+.surfclub-details-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.surfclub-details-action-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.surfclub-details-action-card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.surfclub-details-action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.surfclub-details-action-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.surfclub-details-action-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.surfclub-details-action-button {
+    background-color: #289db9;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.surfclub-details-action-button:hover {
+    background-color: #0056b3;
+}
+
+.surfclub-details-loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+}
+@media (max-width: 768px) {
+    .surfclub-details-title {
+        font-size: 2rem;
+        text-align: center; /* Centrer le titre sur les petits écrans */
+    }
+
+    .surfclub-details-logo {
+        margin: 0 auto 20px auto; /* Centrer le logo sur les petits écrans */
+    }
+
+    .surfclub-details-action-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .surfclub-details-action-card {
+        margin-bottom: 10px; /* Espacement réduit sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .surfclub-details-title {
+        font-size: 1.5rem;
+    }
+
+    .surfclub-details-action-title {
+        font-size: 1.5rem;
+    }
+
+    .surfclub-details-action-button {
+        width: 100%; /* Largeur complète sur les petits écrans */
+    }
+}

@@ -1,0 +1,179 @@
+.monitors-container {
+    padding: 20px;
+    position: relative;
+}
+
+.monitors-container h1{
+    color: #3D5798 !important;
+    font-weight: 600;
+}
+
+.add-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #289db9 !important;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-link:hover {
+    background-color: #3D5798 !important;
+}
+
+.monitors-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px; /* Espace pour le bouton */
+}
+
+.monitor-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+    height: 150px; /* Hauteur fixe pour toutes les cartes */
+}
+
+.monitor-item:hover {
+    transform: translateY(-5px);
+}
+
+.monitor-image {
+    flex: 0 0 25%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.monitor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.monitor-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monitor-info {
+    display: flex;
+    gap: 30px; /* Espace entre les détails */
+    align-items: center;
+}
+
+.monitor-detail {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.monitor-detail i {
+    margin-right: 10px;
+    color: #777;
+    font-size: 18px;
+}
+
+.monitor-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.monitor-actions .action-link {
+    color: #1a73e8;
+    font-size: 24px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.monitor-actions .action-link:hover {
+    background-color: white;
+    color: #1a73e8;
+}
+
+@media (max-width: 768px) {
+    .monitors-container {
+        padding: 10px;
+    }
+
+    .add-link {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .monitor-item {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .monitor-image {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 200px; 
+    }
+
+    .monitor-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .monitor-info {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .monitor-actions {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .monitor-actions .action-link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .monitor-item {
+        margin-bottom: 15px;
+    }
+
+    .monitor-image {
+        height: 150px; 
+    }
+
+    .monitor-content {
+        padding: 10px;
+    }
+
+    .monitor-info {
+        gap: 10px;
+    }
+
+    .monitor-actions .action-link {
+        font-size: 18px;
+    }
+}

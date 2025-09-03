@@ -1,0 +1,5 @@
+basename	size	hash256	keep_path	keep_mtime	delete_path	delete_mtime
+__init__.py	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	/Users/mac/Desktop/innovsurf/YalaSurf/backend/yalasurf/__init__.py	2025-08-18 00:57:51	/Users/mac/Desktop/innovsurf/YalaSurf/backend/AppWeb/migrations/__init__.py	2025-08-18 00:57:51
+__init__.py	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	/Users/mac/Desktop/innovsurf/YalaSurf/backend/yalasurf/__init__.py	2025-08-18 00:57:51	/Users/mac/Desktop/innovsurf/YalaSurf/backend/AppWeb/__init__.py	2025-08-18 00:57:51
+banana.png	377705	2242a069332d8083b3976bb1bf15ed6c2cf924ef0fd68f847ccc1ff890aabda2	/Users/mac/Desktop/innovsurf/YalaSurf/frontend/src/assets/banana.png	2025-08-18 00:57:51	/Users/mac/Desktop/innovsurf/YalaSurf/backend/media/uploads/banana.png	2025-08-18 00:57:51
+splash.png	4040	5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff	/Users/mac/Desktop/innovsurf/YalaSurf/frontend/android/app/src/main/res/drawable/splash.png	2025-08-18 00:57:51	/Users/mac/Desktop/innovsurf/YalaSurf/frontend/android/app/src/main/res/drawable-land-mdpi/splash.png	2025-08-18 00:57:51

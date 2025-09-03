@@ -1,0 +1,9 @@
+# Configuration API Windy
+WINDY_API_KEY=test_key_for_development
+
+# Configuration Django
+DEBUG=True
+SECRET_KEY=django-insecure-test-key-for-development
+
+# Configuration de base de données
+DATABASE_URL=sqlite:///db.sqlite3

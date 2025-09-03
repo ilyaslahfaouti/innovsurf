@@ -1,0 +1,20 @@
+.surf-club-list {
+   display: flex; 
+   flex-direction: row;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.no-clubs-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
